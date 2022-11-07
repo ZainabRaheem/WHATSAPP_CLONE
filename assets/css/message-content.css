@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: none;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(185, 179, 174);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(136, 136, 136);
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.message-container {
+    background-image: url(../image/background.png);
+    background-position: center;
+    height: calc(100vh - 120px);
+    height: 100vh;
+    padding: 20px 80px;
+    overflow-y: scroll;
+}
+
+.chat-sent-main{
+    margin-left: auto;
+}
+
+.message-container .chat-sent {
+    background-color: #dcf8c6;
+    
+}
+
+.chat-message, .day{
+    padding: 8px 10px;
+    font-size: 18px;
+    margin-bottom: 30px;
+    width: fit-content;
+    border-radius: 8px;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    height: 50px;
+    box-shadow: 0px 2px 1px rgb(128, 128, 128);
+}
+.smiley {
+    position: relative;
+    width: fit-content;
+}
+
+.smiley.right::after {
+    content: "\263A";
+    position: absolute;
+    right: -35px;
+    bottom: 20px;
+    width: 30px;
+    height: 30px;
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+    opacity: 0;
+}
+
+.smiley.left::before {
+    content: "\263A";
+    position: absolute;
+    left: -45px;
+    bottom: 25px;
+    width: 30px;
+    height: 30px;
+    font-size: 40px;
+    color: white;
+    opacity: 0;
+}
+
+.smiley.right:hover::after, .smiley.left:hover::before {
+    opacity: 1;
+
+} 
+
+.triangle.left-top:after {
+    content: ' ';
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: -15px;
+    right: auto;
+    top: 0px;
+    bottom: auto;
+    border: 19px solid;
+    border-color: white transparent transparent transparent;
+  }
+  
+  .triangle.right-top:before {
+      content: ' ';
+      position: absolute;
+      width: 0;
+      height: 0;
+      left: auto;
+      right: -15px;
+      top: 0;
+      bottom: auto;
+      border: 19px solid;
+      border-color: #dcf8c6 transparent transparent transparent;
+  }
+
+.chat-time {
+    margin-left: 10px;
+    font-size: 12px;
+    color: rgb(128, 128, 128);
+    white-space: nowrap;
+}
+
+.bi-check-lg {
+    font-size: 22px;
+    color: rgb(128, 128, 128);
+}
+
+.bi-check-all {
+    font-size: 22px;
+    color: blue;
+}
+
+.day {
+    margin: auto;
+    margin-bottom: 30px;
+}
+.time-icon {
+    align-self: flex-end;
+}
+.flex {
+    display: flex;
+    align-items: center;
+}
+
