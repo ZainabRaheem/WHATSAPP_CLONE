@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+}
+
+.mainContainer {
+    height: 100vh;
+    width: 70%;
+    margin-left: 20%;
+    background: url(./images/whatsapp-background-image.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.rightHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 15px;
+    background-color: rgb(216, 215, 215);
+}
+
+.right-avatar {
+    height: 50px;
+    width: 50px;
+    border: none;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profileSection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.right-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.contactInfo {
+    font-family: Roboto;
+    margin-left: 6px;
+    align-items: center;
+    justify-content: center;
+}
+
+.contactInfo h4{
+    font-size: 14px;
+    color: rgb(108, 107, 107);
+}
+.contactInfo p {
+    font-size: 10px;
+    color: rgb(108, 107, 107);
+}
+
+.moreInfo-section {
+    display: flex;
+    /*margin-right: 10px;*/
+}
+
+.line {
+    margin-right:10px;
+    margin-top: 6px;
+}
+.rightLine {
+    height: 2px;
+    width: 22px;
+    border: none;
+    border-radius: 15px;
+    background-color: rgb(108, 107, 107);
+    transform: rotate(90deg);
+}
+
+.moreInfo-section img{
+    height: 16px;
+    color: rgb(108, 107, 107);
+}
+
+#iconSearch {
+    transform: rotate(90deg);
+    color: rgb(108, 107, 107);
+    margin-right: 20px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-items: center;
+    padding: 5px 15px;
+    margin-top:54%;
+    background-color: rgb(216, 215, 215);
+}
+
+.emojiSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.emoji-attach {
+    justify-content: space-around;
+    align-items: center;
+    margin: auto 2px;
+}
+
+.emoji-attach img,
+.send img
+{
+    height: 16px;
+    color: rgb(108, 107, 107);
+}
+
+#attach-icon {
+    margin-left:  15px;
+    color: rgb(108, 107, 107);
+}
+
+form {
+    margin-top: 5px;
+    margin-left: 30px;
+    
+}
+
+form #rightMessage {
+    padding: 12px;
+    width: 400px;
+    border: none;
+    border-radius: 15px;
+}
+
+#iconMore,
+#microphone
+{
+    color: rgb(108, 107, 107);
+}
