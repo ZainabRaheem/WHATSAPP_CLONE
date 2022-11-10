@@ -1,0 +1,512 @@
+/* <!--Zainab Raheem: Code the side bar header and search section of the WhatsApp clone project--> */
+/* <!--Zainab Raheem:Start--> */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 15px 1px;
+    background-color: #f0f2f5;
+  }
+  
+  .options {
+    display: flex;
+    gap: 1.5rem;
+    /* justify-content: space-between; */
+    align-items: center;
+  }
+  
+  .options img {
+    width: 16px;
+    height: 16px;
+    opacity: 0.4;
+  }
+  
+  .search-area {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .search-area {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    padding: 8px 13px;
+  }
+  
+  .search {
+    display: flex;
+    align-items: center;
+    background-color: #f0f2f5;
+    width: 100%;
+    height: 35px;
+    border-radius: 10px;
+  }
+  
+  .search-image {
+    width: 15px;
+    height: 15px;
+    margin: 0 15px;
+    opacity: 0.4;
+  }
+  
+  .search-input {
+    outline: none;
+    border: none;
+    margin-left: 20px;
+    background-color: #f0f2f5;
+  }
+  
+  .filter-image {
+    width: 25px;
+  }
+  /* <!--Zainab Raheem:End--> */
+  
+  /* <!--Adetutu Oluwasanmi: Code the message header section and the message footer section of the WhatsApp clone project--> */
+  /* <!--Adetutu Oluwasanmi:Start--> */
+  
+  * {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    display: flex;
+  }
+  
+  .sidebar-chats {
+    flex: 4;
+    border-right: 1px solid gray;
+  }
+  
+  .chats-section {
+    height: calc(100vh - 120px);
+    width: 65vh;
+    overflow-y: scroll;
+  }
+  
+  .chat {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px 12px;
+    width: 100%;
+  }
+  
+  .chat:nth-child(2) {
+    background-color: rgba(216, 215, 215, 0.4);
+  }
+  
+  .chat::before {
+    content: "";
+    position: absolute;
+    width: 80%;
+    bottom: 0;
+    left: 80px;
+    border-bottom: 1px solid #f2f2f2;
+  }
+  
+  .chat:hover {
+    background-color: #f5f5f5;
+  }
+  
+  .chat-avatar {
+    height: 50px;
+    width: 50px;
+    border: none;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  
+  .chat-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .chat-info {
+    margin-left: 15px;
+    margin-bottom: 5px;
+    flex: 10;
+    line-height: 1.5;
+    opacity: 0.7;
+  }
+  
+  .chat-info h1 {
+    font-size: 16px;
+    font-weight: 700;
+    color: rgb(108, 107, 107);
+    margin-bottom: 0;
+  }
+  
+  .chat-info p {
+    font-size: 12px;
+    color: gray;
+    margin-top: 0;
+    margin-bottom: 5px;
+  }
+  
+  .chat-time {
+    flex: 1;
+    font-size: 12px;
+    color: gray;
+    margin-top: -25px;
+    white-space: nowrap;
+  }
+  
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: none;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #b9b3ae;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #888;
+  }
+  /* <!--Adetutu Oluwasanmi:End--> */
+  
+  /* <!--Ogochukwu Ugorji: Code the message header section and the message footer section of the WhatsApp clone project--> */
+  /* <!--Ogochukwu Ugorji:Start--> */
+  .mainContainer {
+    /*height: 100vh;
+    margin-left: 20%;*/
+    flex: 12;
+    /*width: 70%;
+    background: url("../images/whatsapp-background-image.png") no-repeat center
+      center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;*/
+  }
+  
+  .rightHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 15px;
+    background-color: #f0f2f5;
+  }
+  
+  .right-avatar {
+    height: 50px;
+    width: 50px;
+    border: none;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  
+  .profileSection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .right-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .contactInfo {
+    font-family: "Roboto", sans-serif;
+    margin-left: 16px;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .contactInfo h4 {
+    font-size: 16px;
+    color: rgb(108, 107, 107);
+  }
+  .contactInfo p {
+    line-height: 1.8;
+    font-size: 12px;
+    color: rgb(108, 107, 107);
+  }
+  
+  .moreInfo-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 10px;
+  }
+  
+  .line {
+    margin-right: 10px;
+    margin-top: -2px;
+  }
+  
+  .rightLine {
+    height: 2px;
+    width: 21px;
+    border: none;
+    border-radius: 15px;
+    background-color: rgb(108, 107, 107, 0.8);
+    transform: rotate(90deg);
+  }
+  
+  .moreInfo-section img {
+    height: 16px;
+    opacity: 0.5;
+  }
+  
+  #iconMore {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .dropdown-more {
+    position: relative;
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    padding: 6px;
+    border: none;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    left: -150px;
+    background-color: #f9f9f9;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-family: Roboto;
+    font-size: 14px;
+    color: rgb(108, 107, 107);
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .dropdown-more:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown-more:hover {
+    background-color: rgb(108, 107, 107, 0.35);
+    border: none;
+    padding: 8px;
+    border-radius: 50%;
+  }
+  
+  .dropdown-search {
+    margin-right: 10px;
+  }
+  
+  #iconSearch {
+    transform: rotate(90deg);
+    opacity: 0.5;
+  }
+  
+  .footer {
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    /*justify-content: space-between;
+    margin-top: 57%;*/
+    background-color: #f0f2f5;
+  }
+  
+  /*.emojiSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .emoji-attach {
+    justify-content: space-around;
+    align-items: center;
+  }*/
+  
+  #face-grin,
+  #microphone,
+  #attach-icon {
+    flex: 1;
+    height: 20px;
+    width: 20px;
+    opacity: 0.5;
+  }
+  
+  /*form {
+    margin-top: 1px;
+    margin-bottom: 1px;
+    margin-left: 30px;
+  }*/
+  
+  input#rightMessage {
+    padding: 12px 15px;
+    flex: 20;
+    margin: 5px 10px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+  }
+  
+  input#rightMessage:focus {
+    border-style: solid;
+    border-color: rgb(108, 107, 107, 0.4);
+    outline-style: none !important;
+  }
+  
+  #microphone {
+    margin-right: 6px;
+  }
+  /* <!--Ogochukwu Ugorji:End--> */
+  
+  /* <!--Kasie Ugwu: Code the message content section of the WhatsApp clone project--> */
+  /* <!--Kasie Ugwu:Start--> */
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: none;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: rgb(185, 179, 174);
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(136, 136, 136);
+  }
+  
+  .message-container {
+    background-image: url("../images/whatsapp-background-image.png");
+    overflow-y: scroll;
+    height: calc(100vh - 120px);
+    background-position: center;
+    padding: 20px 80px;
+  }
+  
+  .chat-sent-main {
+    margin-left: auto;
+  }
+  
+  .message-container .chat-sent {
+    background-color: #dcf8c6;
+  }
+  
+  .chat-message,
+  .day {
+    padding: 8px 10px;
+    font-size: 14px;
+    margin-bottom: 30px;
+    width: fit-content;
+    border-radius: 8px;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    height: 35px;
+    box-shadow: 0px 2px 1px rgb(128, 128, 128);
+  }
+  .smiley {
+    position: relative;
+    width: fit-content;
+  }
+  
+  .smiley.right::after {
+    content: "\263A";
+    position: absolute;
+    right: -35px;
+    bottom: 20px;
+    width: 30px;
+    height: 24px;
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+    opacity: 0;
+  }
+  
+  .smiley.left::before {
+    content: "\263A";
+    position: absolute;
+    left: -45px;
+    bottom: 25px;
+    width: 30px;
+    height: 22px;
+    font-size: 40px;
+    color: white;
+    opacity: 0;
+  }
+  
+  .smiley.right:hover::after,
+  .smiley.left:hover::before {
+    opacity: 1;
+  }
+  
+  .triangle.left-top:after {
+    content: " ";
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: -15px;
+    right: auto;
+    top: 0px;
+    bottom: auto;
+    border: 17px solid;
+    border-color: white transparent transparent transparent;
+  }
+  
+  .triangle.right-top:before {
+    content: " ";
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: auto;
+    right: -15px;
+    top: 0;
+    bottom: auto;
+    border: 19px solid;
+    border-color: #dcf8c6 transparent transparent transparent;
+  }
+  
+  .chat-time-mc {
+    margin-left: 10px;
+    font-size: 12px;
+    color: rgb(128, 128, 128);
+    white-space: nowrap;
+  }
+  
+  .bi-check-lg {
+    font-size: 22px;
+    color: rgb(128, 128, 128);
+  }
+  
+  .bi-check-all {
+    font-size: 22px;
+    color: #53bdeb;
+  }
+  
+  .day {
+    margin: auto;
+    margin-bottom: 30px;
+  }
+  .time-icon {
+    margin-top: 10px;
+  }
+  .flex {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* <!--Kasie Ugwu:End--> */
+  
