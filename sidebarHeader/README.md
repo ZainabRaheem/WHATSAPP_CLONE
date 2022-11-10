@@ -16,7 +16,7 @@ There are two sections to the Sidebar header, let's name them:
 
 This section showcases the user's profile image at the left hand side on the section, and on the right hand side:a status updates icon; a new chat icon; and an icon for a dropdown menu.
 
-I was able to created this section's layout using **HTML tags** like: <section>, <div>, <img> and **CSS formats** like flexbox, width and height styling, paddings, margins, background color. etc.
+I was able to created this section's layout using **HTML tags** like: section, div, img and **CSS formats** like flexbox, width and height styling, paddings, margins, background color. etc.
 The icons and profile avatar were downloaded off the internet.
 
 ### The Search Section
